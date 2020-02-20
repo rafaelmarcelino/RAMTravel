@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RAMTravel</string>
+    <string name="activity_list_trip_specials">Specials</string>
+    <string name="activity_list_trip_country">Brazil</string>
+    <string name="belo_horizonte">Belo Horizonte</string>
+    <string name="days">2 dias</string>
+    <string name="price">R$430,00</string>
 </resources>

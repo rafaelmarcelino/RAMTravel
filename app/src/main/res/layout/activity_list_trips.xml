@@ -6,4 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".activities.ListTripsActivity">
 
+    <ImageView
+        android:id="@+id/activity_list_trip_iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:srcCompat="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <TextView
+        android:id="@+id/activity_list_trip_tv_special"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/activity_list_trip_specials"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_list_trip_tv_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/activity_list_trip_country"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/activity_list_trip_tv_special"
+        app:layout_constraintTop_toBottomOf="@+id/activity_list_trip_tv_special" />
+
+
+    <ListView
+        android:id="@+id/activity_list_trip_lv_packages"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_list_trip_iv_banner"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/item_package_list_view"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
