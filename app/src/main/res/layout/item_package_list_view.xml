@@ -41,7 +41,7 @@
                 android:layout_margin="8dp"
                 android:background="@android:drawable/screen_background_dark_transparent"
                 android:padding="4dp"
-                android:text="@string/belo_horizonte"
+                android:text="@string/belo_horizonte_mg"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
                 android:textStyle="bold"

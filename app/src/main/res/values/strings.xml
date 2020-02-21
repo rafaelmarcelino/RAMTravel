@@ -2,7 +2,12 @@
     <string name="app_name">RAMTravel</string>
     <string name="activity_list_trip_specials">Specials</string>
     <string name="activity_list_trip_country">Brazil</string>
-    <string name="belo_horizonte">Belo Horizonte</string>
+    <string name="belo_horizonte_mg">Belo Horizonte</string>
+    <string name="foz_igaucu_pr">Foz do Iguaçu</string>
+    <string name="recife_pe">Recife</string>
+    <string name="rio_de_janeiro_rj">Rio de Janeiro</string>
+    <string name="salvador_ba">Salvador</string>
+    <string name="sao_paulo_sp">São Paulo</string>
     <string name="days">2 dias</string>
     <string name="price">R$430,00</string>
 </resources>
