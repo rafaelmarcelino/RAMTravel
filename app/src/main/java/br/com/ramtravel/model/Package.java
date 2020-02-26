@@ -9,11 +9,11 @@ import java.math.BigDecimal;
 public class Package {
 
     private String nameOfCity;
-    private int imagePlace;
+    private String imagePlace;
     private int qtyDays;
     private BigDecimal valueOfPackage;
 
-    public Package(String nameOfCity, int imagePlace, int qtyDays, BigDecimal valueOfPackage) {
+    public Package(String nameOfCity, String imagePlace, int qtyDays, BigDecimal valueOfPackage) {
         this.nameOfCity = nameOfCity;
         this.imagePlace = imagePlace;
         this.qtyDays = qtyDays;
@@ -28,11 +28,11 @@ public class Package {
         this.nameOfCity = nameOfCity;
     }
 
-    public int getImagePlace() {
+    public String getImagePlace() {
         return imagePlace;
     }
 
-    public void setImagePlace(int imagePlace) {
+    public void setImagePlace(String imagePlace) {
         this.imagePlace = imagePlace;
     }
 

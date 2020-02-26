@@ -1,10 +1,13 @@
 package br.com.ramtravel.adapters;
 
 import android.content.Context;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -38,7 +41,24 @@ public class CustomPackageAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View createdView = LayoutInflater.from(context).inflate(R.layout.item_package_list_view, parent, false);
+        View createdView = toDoBindInformation(LayoutInflater.from(context).inflate(R.layout.item_package_list_view, parent, false), position);
         return createdView;
+    }
+
+    private View toDoBindInformation(View createdView, int position) {
+        View updatedView = createdView;
+
+        TextView tvNameOfCity = updatedView.findViewById(R.id.item_package_tv_name_place);
+        tvNameOfCity.setText(packages.get(position).getNameOfCity());
+        TextView tvQtyDays = updatedView.findViewById(R.id.item_package_tv_qty_days);
+        tvQtyDays.setText(packages.get(position).getQtyDays() + " days");
+        TextView tvPrice = updatedView.findViewById(R.id.item_package_tv_price);
+        tvPrice.setText("U$" + packages.get(position).getValueOfPackage().toString());
+
+        ImageView ivPlaces = updatedView.findViewById(R.id.item_package_iv_places);
+        int identifier = context.getResources().getIdentifier(packages.get(position).getImagePlace(), "drawable", context.getPackageName());
+        ivPlaces.setImageDrawable(context.getResources().getDrawable(identifier));
+
+        return updatedView;
     }
 }
