@@ -16,6 +16,7 @@ import br.com.ramtravel.model.Package;
 
 public class CustomPackageAdapter extends BaseAdapter {
 
+    public static final String RESOURCE_TYPE_DRAWABLE = "drawable";
     private List<Package> packages;
     private Context context;
 
@@ -56,7 +57,7 @@ public class CustomPackageAdapter extends BaseAdapter {
         tvPrice.setText("U$" + packages.get(position).getValueOfPackage().toString());
 
         ImageView ivPlaces = updatedView.findViewById(R.id.item_package_iv_places);
-        int identifier = context.getResources().getIdentifier(packages.get(position).getImagePlace(), "drawable", context.getPackageName());
+        int identifier = context.getResources().getIdentifier(packages.get(position).getImagePlace(), RESOURCE_TYPE_DRAWABLE, context.getPackageName());
         ivPlaces.setImageDrawable(context.getResources().getDrawable(identifier));
 
         return updatedView;
