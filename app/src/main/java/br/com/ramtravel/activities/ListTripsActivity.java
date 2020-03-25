@@ -14,7 +14,7 @@ import br.com.ramtravel.model.Package;
 
 public class ListTripsActivity extends AppCompatActivity {
 
-    private static final String LIST_TRIPS = "List Trips";
+    private static final String TITLE_APPBAR = "Packages";
     private PackageDAO packageDAO;
     private List<Package>packages;
     private ListView listViewPackages;
@@ -24,7 +24,7 @@ public class ListTripsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_trips);
-        setTitle(LIST_TRIPS);
+        setTitle(TITLE_APPBAR);
         initializeVariables();
     }
 
